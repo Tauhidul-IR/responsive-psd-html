@@ -1,0 +1,305 @@
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,700&display=swap');
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+.navbar-toggler span{
+	color: #fff;
+}
+.navbar-nav{
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+.navbar-brand {
+    font-weight: 600;
+    color: #28377e !important;
+    font-size: 30px !important;
+    text-transform: uppercase;
+}
+.navbar-nav .nav-link{
+	padding-right: 14px !important;
+	padding-left: 14px !important;
+	color: #28377e;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.navbar-nav .nav-link:hover {
+	 color: #f2622c;
+}
+.navbar{
+	padding: 25px 0;
+}
+.banner-section{
+	position: relative;
+	overflow: hidden;
+}
+.banner-section{}
+.banner-section .row{}
+.banner-section h1{
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	color: #fff;
+	font-size: 60px;
+	max-width: 570px;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase; 	 
+}
+.banner-section a{
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	color: #fff;
+	transform: translateX(-50%);
+
+}
+.orange-banner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 55% 
+}
+
+.about-section{
+	padding: 120px 0; 
+}
+.about-content{}
+.about-content h2{}
+.about-content p{
+	font-size: 14px;
+	color: #b0b0b1;
+}
+h2{
+	font-size: 36px;
+	color: #204f87;
+	text-transform: uppercase;
+	position: relative;
+}
+h2::before{
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 0; 
+	background-color: #f2622c;
+	height: 5px;
+	width: 70px;
+	display: block;
+	transition-duration: 0.8s;
+} 
+h2:hover::before{
+	opacity: 0;
+	left: 30px;
+
+} 
+.feature-section{
+	padding: 80px 0;
+	text-align: center;
+	background-color: #f7f8f8;
+	background-image: url(../images/feature-bg.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 70%;
+
+}
+.feature-section .row .col-xl{
+	padding: 5px;
+}
+.feature-section h2{
+	margin-bottom: 50px;
+}
+.feature-section h2::before{
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.feature{
+	color: #fff;
+	position: relative;
+}
+.feature img{
+	width: 100%;
+}
+.feature h5{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -30%);
+	font-size: 25px;
+	text-transform: uppercase;
+	z-index: 1; 
+	opacity: 0;
+	transition-duration: 0.6s;
+}
+.feature:hover h5{
+	opacity: 1;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.feature i{
+	transition-duration: 0.6s;
+	position: absolute;
+	bottom: 20px;
+	z-index: 1;
+	left: 40%;
+	transform: translateX(-40%);
+	opacity: 0;
+}
+.feature:hover i{
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 1;
+}
+
+.feature::after{
+	content: "";
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,28377e+66&0+0,0.63+68 */
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(40,55,126,0.61) 66%, rgba(40,55,126,0.63) 68%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(40,55,126,0.61) 66%,rgba(40,55,126,0.63) 68%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(40,55,126,0.61) 66%,rgba(40,55,126,0.63) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a128377e',GradientType=0 ); /* IE6-9 */
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 0%;
+transition-duration: 0.4s;
+}
+.feature:hover::after{
+	height: 100%;
+}
+
+.ATTORNEYS-section{
+	background-image: url(../images/lawyer-bg.png);
+	padding: 100px 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.ATTORNEYS-section h2{
+	color: #fff;
+}
+.link{
+	color: #f2622c;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 12px;
+}
+.attorneys{
+	position: relative;
+	margin: 15px 8px; 
+}
+.attorneys img{}
+.attorneys::after{
+	content: "";
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,28377e+66&0+0,0.63+68 */
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(40,55,126,0.61) 66%, rgba(40,55,126,0.63) 68%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(40,55,126,0.61) 66%,rgba(40,55,126,0.63) 68%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(40,55,126,0.61) 66%,rgba(40,55,126,0.63) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#a128377e',GradientType=0 ); /* IE6-9 */
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 0%;
+transition-duration: 0.4s;
+}
+.attorneys:hover::after{
+	height: 100%;
+}
+.attorneys h6{
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	font-size: 25px;
+	text-transform: uppercase;
+	z-index: 1; 
+	opacity: 0;
+	transition-duration: 0.6s;
+	color: #fff;
+	width: 100%;
+	line-height: 1.7;
+}
+.attorneys:hover h6{
+	opacity: 1;
+	bottom: 20px;
+} 
+
+.languages-section{
+	padding: 100px 0;
+}
+.languages-section h2{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.languages-section h2::before{
+	left: 50%;
+	transform: translateX(-50%);
+}
+.languages-section h4{
+	color: #28377e;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 600;
+}
+ 
+.contact-section{
+	background-color: #28377e;
+	padding: 100px 0;
+}
+.contact-section h2{
+	text-align: center;
+	margin-bottom: 50px;
+	color: #fff;
+}
+.contact-section h2::before{
+	left: 50%;
+	transform: translateX(-50%);
+}
+.form-group{}
+.form-group .form-control{
+	background-color: transparent;
+	border-radius: 0;
+	border: 0;
+	border-bottom: 1px solid #5160a9;
+	color: #fff; 
+}
+.btn-custom{
+	background-color: #f2622c;
+	color: #fff;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 8px 50px;
+}
+
+::placeholder{
+	color: #fff !important; 
+}
+
+.form-control:focus{
+	outline: none;
+	box-shadow: 0 0 0 0.0 rgba(0, 123, 255, 0) !important;
+}
+
+
+footer{
+	background-color: #0c1234;
+	padding: 30px 0;
+}
+p{
+	font-size: 14px;
+	color: #b0b0b1;
+}
+footer p{
+	margin: 0;
+}
+footer .nav{}
+footer .nav li{}
+footer .nav li a{
+	color: #b1b7dd;
+	font-size: 18px;
+	padding: 0 20px;
+}
+
+
